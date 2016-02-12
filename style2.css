@@ -1,0 +1,48 @@
+
+
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+$backdrop: #2B1E45; 
+$backdrop-light: rgba(49, 134, 204, 0.5); 
+$backdrop-dark: rgba(28, 77, 117, 0.8); 
+$paper:#FCF5C7; 
+$paper-border: #CCC6A1; 
+$paper-texture: url("http://cdni.tutorialchip.com/wp-content/uploads/2012/03/White-Paper-Texture-Background-520x390.jpg"); 
+$font-primary: 'Pacifico', cursive;
+*{
+  box-sizing: border-box; 
+}
+html{ 
+  height: 100%; 
+  @include background-image(linear-gradient(top, $backdrop-light, $backdrop-dark 70%));
+}
+  
+.paper{ 
+  background-color: $paper; 
+  width: 70%;
+  padding: 50px 0; 
+  margin: 10%; 
+  position: relative; 
+  height: auto;  
+  border: 2px solid $paper-border; 
+  line-height: 2; 
+  div{
+    width: 100%;
+    text-align: center; 
+  }
+  h1{
+    font-family: $font-primary;
+    font-size: 54px; 
+  }
+} 
+
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:  $paper-texture; 
+    opacity: 0.8; 
+    z-index:9999;
+}
