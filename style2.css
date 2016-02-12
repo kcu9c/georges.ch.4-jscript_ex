@@ -7,7 +7,6 @@ $backdrop-light: rgba(49, 134, 204, 0.5);
 $backdrop-dark: rgba(28, 77, 117, 0.8); 
 $paper:#FCF5C7; 
 $paper-border: #CCC6A1; 
-$paper-texture: url("http://cdni.tutorialchip.com/wp-content/uploads/2012/03/White-Paper-Texture-Background-520x390.jpg"); 
 $font-primary: 'Pacifico', cursive;
 *{
   box-sizing: border-box; 
